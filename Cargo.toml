@@ -1,0 +1,11 @@
+[package]
+name = "mac_derive"
+version = "0.1.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0.17", features = ["full", "extra-traits"] }
+quote = "1.0.3"
+proc-macro2 = "1.0.10"
