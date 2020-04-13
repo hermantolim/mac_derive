@@ -42,7 +42,6 @@ pub struct Variant {
 impl Parse for Enum {
     fn parse(input: ParseStream) -> Result<Self> {
         let derive_input: DeriveInput = input.parse()?;
-
         split_owned!(derive_input as attrs, ident, generics, data);
 
         let data = match data {
